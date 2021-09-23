@@ -1,0 +1,365 @@
+
+@import 'global';
+
+/* about */
+.about{
+    width: 100%;
+    padding: 50px 0x;
+    margin: 50px 0px;
+    .box{
+        width: 100%;
+        padding: 20px 25px;
+        background-color: #fff;
+        .box-image{
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                position: absolute;
+            }
+            .icon{
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: #fff;
+                clip-path: polygon(0 0, 73% 0, 100% 100%, 0% 100%);
+                i{
+                    position: absolute;
+                    font-size: 30px;
+                    color: #8d0000;
+                    top: 20px;
+                    left: 30px;
+                }
+            }
+        }
+        .box-content{
+            width: 100%;
+            h4 {
+                color: #111;
+                font-size: 25px;
+                margin-bottom: 20px;
+                padding: 5px 0px;
+            }
+            p {
+                color: #111;
+                font-size: 16px;
+                line-height: 2rem;
+            }
+            .btn{
+                padding: 10px 20px;
+                color: #fff;
+                font-size: 13px;
+                background-color: #8d0000;
+                &:hover{
+                    background-color: #252525;
+                    transition: all .2s ease-in-out;
+                }
+            }
+        }
+    }
+}
+/* request */
+.request{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0x;
+    position: relative;
+    background-color: #252525;
+    clip-path: polygon(32% 0, 100% 0, 100% 100%, 49% 100%);
+    &::before {
+        position: fixed;
+        width: 100%;
+        background-image: url("../images/fixed.jpg");
+        background-position: center;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-attachment: fixed;
+        z-index: 9;
+    }
+    .contact-req{
+        padding: 100px 0px;
+    }
+    .heading{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+        .title{
+            width: fit-content;
+            margin: auto;
+            padding: 10px 0px;
+            margin-bottom: 20px;
+            position: relative;
+            color: #fff;
+            font-size: 25px;
+        }
+        .desc{
+            font-size: 14px;
+            margin: auto;
+            padding: 10px 0px;
+            margin-bottom: 20px;
+            position: relative;
+            color: #838383;
+        }
+    }
+    form .btn{
+        padding: 10px 20px !important;
+        margin-top: 5px;
+        margin-left: 220px;
+        color: #fff !important;
+        font-size: 13px;
+        background-color: #8d0000;
+        justify-content: center;
+        &:hover{
+            background-color: #838383;
+            transition: all .2s ease-in-out;
+        }
+    }
+}
+/* services */
+.services{
+    width: 100%;
+    padding: 50px 0x;
+    margin: 50px 0px;
+    .heading{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+        .title{
+            width: fit-content;
+            margin: auto;
+            padding: 10px 0px;
+            margin-bottom: 20px;
+            position: relative;
+            color: #252525;
+            font-size: 40px;
+        }
+    }
+    .box{
+        display: flex;
+        .box-icon{
+            padding: 40px;
+            background-color: #838383;
+            clip-path: polygon(0 0, 64% 0, 100% 100%, 0% 100%);
+            i{
+                font-size: 25px;
+                color: #8d0000;
+            }
+        }
+        &:hover{
+            .box-icon{
+                background-color: #8d0000;
+                i{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+/* contact us */
+.contact-us{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #cacaca;
+    p{
+        width: 400px;
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: 500;
+        align-items: center;
+        align-content: center;
+    }
+    a{
+        padding: 10px 15px;
+        margin-top: 10px;
+        position: absolute;
+        right: 10%;
+        border: 1px solid transparent;
+        background-color: #8d0000;
+        color: #fff;
+        &:hover{
+            background-color: #252525;
+            color: #fff;
+        }
+    }
+}
+/* reasons & news */
+.reasons-news{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #fff;
+    .reasons {
+        .heading{
+            text-align: center;
+            color: #111;
+        }
+        .collapsible {
+            background-color: #eee;
+            color: #838383;
+            width: 100%;
+            border: none;
+            display: flex;
+            text-align: left;
+            align-items: center;
+            outline: none;
+            font-size: 18px;
+            &:hover,
+            &:active{
+                background-color: #252525;
+                color: #838383;
+                transition: all .3s ease-in-out;
+            }
+            .icon{
+                width: 80px;
+                height: 65px;
+                background-color: #bbbbbb;
+                clip-path: polygon(0 0, 73% 0, 100% 100%, 0% 100%);
+            }
+        }
+        i{
+            font-size: 15px;
+            color: #252525;
+            position: absolute;
+            background-color: #bbbbbb;
+            justify-content: center !important;
+            align-content: center !important;
+            align-items: center !important;
+        }
+    }
+    .content {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 10px 20px;
+    }
+    .achievments {
+        width: 100%;
+        padding: 0px 15px;
+        box-sizing: border-box;
+        i{
+            color: #838383;
+        }
+        .block {
+            margin-bottom: 80px;
+            a{
+                color: #838383;
+                &:hover{
+                    color: #e44545;
+                }
+                img:hover{
+                    background-color: #e44545;
+                }
+            }
+            .news-pic {
+                float: left;
+                margin-right: 20px;
+                position: relative;
+            }
+        }
+    }
+}
+.reasons-news .reasons .collapsible:hover .icon,
+.reasons-news .reasons .collapsible:active .icon{
+    background-color: #8d0000;
+    transition: all .3s ease-in-out;
+}
+.reasons-news .reasons .collapsible:hover i,
+.reasons-news .reasons .collapsible:active i{
+    background-color: #8d0000;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+/* our clients */
+.our-clients{
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #fff;
+    .heading{
+        color: #111;
+        font-size: 55px;
+        font-weight: 900;
+    }
+    .client{
+        padding: 10px 8px;
+        background-color: #dddddd;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        &:hover{
+            content: 'client';
+            background-color: #e44545;
+            transition: all .4s ease-in-out;
+        }
+    }
+}
+/* footer */
+footer{
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #232331;
+    .head{
+        width: 280px;
+        height: 60px;
+        background-color: #8d0000;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        clip-path: polygon(0 0, 81% 0, 100% 100%, 0% 100%);
+    }
+    h4{
+        padding: 17px 8px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .about-us .about-logo{
+        padding: 20px 0px;
+    }
+    p,
+    i,
+    a{
+        color: #838383;
+        font-size: 14px;
+    }
+    .social {
+        display: flex;
+        li{
+            padding-right: 25px;
+            font-size: 17px;
+            i:hover{
+                color: #8d0000;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+    .pages{
+        .info-content{
+            display: flex;
+        }
+        .soc a:hover {
+            color: #8d0000;
+            transition: all .3s ease-in-out;
+        }
+        .soc:hover{
+            transform: translateX(10px);
+            transition: all .3s ease-in-out;
+        
+        }
+        .info-content ul{
+            padding-right: 80px;
+        }
+    }
+    .contact-info{
+        display: flex;
+        i,
+        p{
+            padding-right: 8px;
+        }
+    }
+}
